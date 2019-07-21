@@ -40,29 +40,39 @@ module.exports = function(app) {
     /*for (var i = 0; i < req.body.scores.length; i++) {
       userScore += parseInt(req.body.scores[i]);
     }*/
+    var addScores = 0
     //Returns the sum of scores for any user
-    function sumOfScores(friendArray) {
+    function sumOfScores(friendArray, i) {
       for (var i = 0; i < friendArray.length; i++) {
-        userScore += parseInt(friendArray[i]);
+        addScores += parseInt(friendArray[i]);
       }
-      return userScore;
+      return addScores;
     }
     //Get user score
     var userScore = sumOfScores(req.body.scores);
-    //console.log("user score sum is: ");
-    //console.log(userScore);
+    console.log("============================================");
+    console.log("Added user score sum is: ");
+    console.log(userScore); //Having async issues with the console.logs, userScore is returning previous record instead of incoming friends data.
+    console.log("============================================");
     //Get scores of possible match
     var scoreDiff = 100;
     var indexOfMatch;
     for (var i = 0; i < friendsData.length - 1; i++) {
-      //console.log("Here is the friends scores array: " + friendsData[i].scores);
+      console.log("Scores for " + friendsData[i].name + " :"  + friendsData[i].scores);
+      //reset addScores
+      addScores =  0;
       var otherScore = sumOfScores(friendsData[i].scores);//--------
+      console.log("Sum of scores for " + friendsData[i].name + " is " + otherScore);
       var currScoreDiff = Math.abs(userScore - otherScore);
+      console.log("Score difference for " + friendsData[i].name + " is " +  currScoreDiff);
       if (currScoreDiff < scoreDiff) {
         scoreDiff = currScoreDiff
-        indexOfMatch = i;
+        indexOfMatch = i
       }
     }
+    console.log("================================================")
+    console.log("Index of the match inside friendsArrary is: " + indexOfMatch);
+    console.log("The json for the matched: ");
     console.log(friendsData[indexOfMatch]);
     res.json(friendsData[indexOfMatch]);
     
