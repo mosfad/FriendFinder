@@ -9,7 +9,7 @@
 var friendsArray = [
     {
     name:"Ahmed",
-    photo:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    photo:"https://source.unsplash.com/VVEwJJRRHgk",
     scores: [
         5,
         1,
@@ -26,7 +26,7 @@ var friendsArray = [
     },
     {
     name: "Ted Silva",
-    photo: "https://unsplash.com/photos/WjkPDHMjWzE",
+    photo: "https://source.unsplash.com/WjkPDHMjWzE",  
     scores: [
         "4",
         "2",
@@ -42,7 +42,7 @@ var friendsArray = [
     },
     {
     name: "Sammy Perez",
-    photo: "https://unsplash.com/photos/zIBn97bCJoI",
+    photo: "https://source.unsplash.com/zIBn97bCJoI",
     scores: [
         "3",
         "2",
