@@ -9,7 +9,7 @@ The app is designed to help users find compatible partners. The app currently us
 *Please note the app uses Node.js and Express for its server environment.*. To use this app, please click on its web page(see *Accessing deployed app*).
 
 ### Accessing deployed app
-[FriendFinder Webpage](https://fierce-ocean-44823.herokuapp.com)
+[FriendFinder webpage](https://fierce-ocean-44823.herokuapp.com)
 
 ### Running deployed app
 [FriendFinder demo](https://drive.google.com/open?id=1ZjMpnFxvD8hSZMFS1ud_XMiUaekP8ac9)               
