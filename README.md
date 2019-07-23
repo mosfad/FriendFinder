@@ -17,6 +17,8 @@ The app is designed to help users find compatible partners. The app currently us
 ### Contact me about FriendFinder
 <maafadina@gmail.com>
 
+### FriendFinder app in portfolio
+[My updated portfolio](https://mosfad.github.io/Portfolio-One/)
 
 ### Contributors 
 Modupe Fadina
